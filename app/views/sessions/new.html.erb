@@ -1,0 +1,20 @@
+<% provide(:title, 'Login') %>
+<div class="form">
+   
+   <div class="container col-md-6">
+        <div class="jumbotron session-form">
+            <h1 class="text-center">Login</h1>
+            <%= form_for(:session, url: sessions_path) do |f| %>
+                <%= f.label :email %>
+                <%= f.text_field :email, class: "form-control" %>
+
+                <%= f.label :password %>
+                <%= f.password_field :password, class: "form-control" %>
+
+                <%= f.submit "Login", class: "btn btn-block btn-dark mt-4" %>
+            <% end %>
+            <p>New here? <%= link_to "Sign up now!", signup_path %></p>
+       </div>
+   </div>
+</div>
+

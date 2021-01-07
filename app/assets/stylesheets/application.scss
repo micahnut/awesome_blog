@@ -1,0 +1,170 @@
+@import "bootstrap";
+@import "font-awesome";
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$favorite-color: #355c7d;
+
+body{
+    background-color: $favorite-color;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+}
+
+.sign-up-bg{
+    color: black;
+    background-color: white;
+}
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+   }
+
+.site-footer
+{
+//   position: fixed;
+//   bottom: 0;
+//   width: 100%;
+height: 60px;
+  background-color: white;
+  padding:20px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  /* margin-left:6px; */
+  margin-right:0;
+  border-radius:100%;
+  background-color:#26272b;
+}
+.copyright-text
+{
+  margin:0
+}
+
+.session-form{
+  color: black;
+}
+
+.home-page{
+  color: black;
+}
+
+.users-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.users {
+  list-style-type: none;
+}
+
+.users-item a{
+  color: white;
+}
+
+.users-item a:hover{
+  text-decoration: none;
+  color: #353536;
+}
+
+.pagination .page-item a{
+  color: #353536;
+}
+
+.pagination .page-item.active .page-link{
+  background-color: #353536;
+  border-color: #353536;
+}
+
+.microposts {
+  list-style-type: none;
+  padding-inline-start:0px;
+}
+
+.microposts li{
+  border-top: 1px solid white;
+  margin-bottom: 10px;
+}
+.timestamp{
+  color: #353536;
+}

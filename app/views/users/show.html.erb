@@ -1,0 +1,31 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+    <!-- User profile picture and name -->
+    <div class="span col-md-4">
+        <aside class="span">
+        <section>
+            <h1>    
+                <%= gravatar_for @user%>
+                <%= @user.name%>
+            </h1>
+        </section>
+        <section>
+            <%= render 'shared/stats' %>
+        </section>
+        </aside>
+    </div>
+    <!-- Right side: shows all microposts -->
+    <div class="col-md-8">
+        <%= render 'follow_form' if logged_in? %>
+        <% if @user.microposts.any?%>
+            <h4 class="mt-3">Microposts (<%=@user.microposts.count%>)</h3>
+            <ul class="microposts">
+                <%= render @microposts%>
+                <%# @microposts -> this will look for the _micropost.html.erb file %>
+                
+            </ul>
+            
+            <%= will_paginate @microposts%>
+        <% end%>
+    </div>
+</div>
